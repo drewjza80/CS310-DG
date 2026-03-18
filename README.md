@@ -1,2 +1,4 @@
-# CS310-DG
-Repository for CS310 class
+CS 310 C++
+Contributors
+Rober Flowers 
+Andrew Ganthier 
