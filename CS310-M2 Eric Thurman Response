@@ -1,0 +1,58 @@
+// =======================================================================
+// Imports (Includes)
+// =======================================================================
+#include <iostream>
+#include <string>
+
+// ========================================================================
+// Namespace
+// ========================================================================
+using namespace std;
+
+// ========================================================================
+// Function Declarations
+// ========================================================================
+string get_project_name();
+
+// ========================================================================
+// Main Execution
+// ========================================================================
+int main()
+{
+    // Fixed typo: get_prject_name() -> get_project_name()
+    string project_name = get_project_name();
+
+    // Fixed missing semicolon at the end of the statement
+    cout << "Active project: " << project_name << endl;
+
+    return 0;
+}
+
+// ========================================================================
+// Function Definitions
+// ========================================================================
+
+/**
+ * Prompt for a project name.
+ *
+ * Returns
+ * -------
+ * string
+ * The raw project name entered by the user.
+ *
+ * Notes
+ * -----
+ * getline() is used to preserve spaces in multi-word names.
+ */
+string get_project_name()
+{
+    string project_name;
+
+    cout << "Enter the name of your current project: ";
+    
+    // Fixed incorrect standard function: get_line() -> getline()
+    getline(cin, project_name);
+
+    // Fixed typo in variable name: projct_name -> project_name
+    return project_name;
+}
