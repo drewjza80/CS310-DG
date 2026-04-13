@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double length = 5.5;
+    double width = 3.0;
+
+    // Call the user-defined function
+    double totalArea = calculateArea(length, width);
+
+    cout << "The area of the rectangle is: " << totalArea << endl;
+
+    return 0;
+}
+
+// User-defined function definition
+void calculateArea(double l, double w) {
+    double area = l * w;
+    return area;
+}
