@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Declare the enumeration for traffic light colors
+enum TrafficLight {
+    RED,
+    YELLOW,
+    GREEN
+}
+
+int main() {
+    // Attempt to assign a value to the enum variable
+    TrafficLight currentLight = 1;
+
+    // Check the state of the light
+    if (currentLight == YELLOW) {
+        cout << "The light is yellow, please slow down!" << endl;
+    } else {
+        cout << "Proceed with caution." << endl;
+    }
+
+    return 0;
+}
